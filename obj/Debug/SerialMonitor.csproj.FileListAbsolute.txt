@@ -6,7 +6,6 @@ C:\Users\compu\Desktop\BSCS6A\VP\WPF_APP\SerialMonitor\obj\Debug\SerialMonitor.c
 C:\Users\compu\Desktop\BSCS6A\VP\WPF_APP\SerialMonitor\obj\Debug\MainWindow.g.cs
 C:\Users\compu\Desktop\BSCS6A\VP\WPF_APP\SerialMonitor\obj\Debug\App.g.cs
 C:\Users\compu\Desktop\BSCS6A\VP\WPF_APP\SerialMonitor\obj\Debug\SerialMonitor_MarkupCompile.cache
-C:\Users\compu\Desktop\BSCS6A\VP\WPF_APP\SerialMonitor\obj\Debug\SerialMonitor_MarkupCompile.lref
 C:\Users\compu\Desktop\BSCS6A\VP\WPF_APP\SerialMonitor\obj\Debug\MainWindow.baml
 C:\Users\compu\Desktop\BSCS6A\VP\WPF_APP\SerialMonitor\obj\Debug\SerialMonitor.g.resources
 C:\Users\compu\Desktop\BSCS6A\VP\WPF_APP\SerialMonitor\obj\Debug\SerialMonitor.Properties.Resources.resources

@@ -3,10 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SerialMonitor"
-        xmlns:Custom="http://schemas.microsoft.com/xps/2005/06/documentstructure" xmlns:Collections="clr-namespace:System.Collections;assembly=mscorlib" x:Class="SerialMonitor.MainWindow"
+    x:Class="SerialMonitor.MainWindow"
         mc:Ignorable="d"
-        Title="SerialMonitor" Height="450" Width="800" FontFamily="Arial">
+   Icon="C:\Users\compu\Desktop\Pics\my.jpg" 
+    Foreground="WhiteSmoke"
+    SizeToContent="Manual"
+    
+    ResizeMode="NoResize"
+       Title="SerialMonitor" Height="450" Width="800" FontFamily="Arial" Background="Chocolate">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -30,8 +34,8 @@
             <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Column="1" Grid.Row="3" Text="Select Port" Margin="0,5,5,0" TextAlignment="Center"/>
-        <ComboBox Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" x:Name="portList" SelectedIndex="0" IsReadOnly="True">
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="Select Port" Margin="0,5,5,0" TextAlignment="Center" />
+        <ComboBox Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" x:Name="portList" SelectedIndex="0" IsReadOnly="True" Padding="10" >
             <TextBlock Text="COM1"/>
             <TextBlock Text="COM2"/>
             <TextBlock Text="COM3"/>
@@ -48,7 +52,7 @@
             <TextBlock Text="COM14"/>
         </ComboBox>
         <TextBlock Grid.Column="4" Grid.Row="3" Text="Select Baud Rate" Margin="5,5,5,0" TextAlignment="Center"/>
-        <ComboBox Grid.Column="5" Grid.Row="3" Grid.ColumnSpan="2" x:Name="baudRate" SelectedIndex="0">
+        <ComboBox Grid.Column="5" Grid.Row="3" Grid.ColumnSpan="2" x:Name="baudRate" SelectedIndex="0" Background="Chocolate" Foreground="Black" Padding="10">
             <TextBlock Text="300"/>
             <TextBlock Text="1200"/>
             <TextBlock Text="2400"/>
@@ -65,12 +69,15 @@
             <TextBlock Text="1000000"/>
             <TextBlock Text="20000000"/>
         </ComboBox>
-        <TextBox Grid.Column="1" Grid.ColumnSpan="8" Grid.Row="1" Name="input" Text="" Margin="5,0" VerticalContentAlignment="Center"/>
-        <Button Grid.Column="9" Grid.Row="1" Padding="10" x:Name="send" Click="sendData" Content="Send" Margin="5,5"/>
-        <Button Grid.Column="9" Grid.Row="3" Padding="10" x:Name="connect" Click="ConnectPort" Content="Connect"/>
-        <TextBox Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="9" IsReadOnly="True" Name="output" Margin="5" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" HorizontalScrollBarVisibility="Auto" AutomationProperties.IsOffscreenBehavior="Default"  Cursor="Arrow" Foreground="#FFF90C0C" />
+        <TextBox Grid.Column="1" Grid.ColumnSpan="8" Grid.Row="1" Name="input" Text="" Margin="5,0" VerticalContentAlignment="Center" Background="AliceBlue"/>
+        <Button Grid.Column="9" Grid.Row="1" Padding="10" x:Name="send" Click="sendData" Content="Send"  Background="BurlyWood" Margin="0,0,5,0"/>
+        <Button Grid.Column="9" Grid.Row="3" Padding="10" x:Name="connect" Click="ConnectPort" Content="Connect" Background="BurlyWood" Margin="0,0,5,0" />
+        
+        
+        <TextBox Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="9" IsReadOnly="True" Name="output" Margin="5" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" HorizontalScrollBarVisibility="Auto" AutomationProperties.IsOffscreenBehavior="Default"  Cursor="Arrow" Foreground="White" Background="Black"  />
        
-        <Rectangle Grid.RowSpan="5" Stroke="Black" Grid.ColumnSpan="11" Margin="15,15,15,15"/>
+        <Rectangle Grid.RowSpan="5" Stroke="Black" Grid.ColumnSpan="11" Margin="15,15,15,15" Panel.ZIndex="0"/>
+        
 
     </Grid>
 </Window>

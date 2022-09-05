@@ -32,7 +32,7 @@ namespace SerialMonitor
 
         private void ConnectPort(object sender, RoutedEventArgs e)
         {
-            output.Foreground = Brushes.Black;
+            //output.Foreground = Brushes.Black;
             port.Close();
             port.PortName = portList.Text; //"COM3";
             port.BaudRate = Int32.Parse(baudRate.Text);//9600;
@@ -45,6 +45,7 @@ namespace SerialMonitor
             }
             catch
             {
+                output.Foreground = Brushes.Red;
                 output.AppendText($"\n No Board at {port.PortName} ");
                 if (SerialPort.GetPortNames().Length > 0)
                 {
